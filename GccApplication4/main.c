@@ -23,7 +23,7 @@ void setTimerInterrupt() {
     
     //OCR1A = (CPU Frequency / Prescaler * Interrupt Frequency) -1;
 
-    OCR1A = 24999; // Set CTC compare value for 50 ms
+    OCR1A = 12499; // Set CTC compare value for 50 ms
 
     TIMSK1 |= (1 << OCIE1A); // Enable CTC interrupt
     sei(); // Enable global interrupts
